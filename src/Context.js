@@ -257,6 +257,7 @@ export default class RoomProvider extends Component {
     );
   }
 }
+
 const RoomConsumer = RoomContext.Consumer;
 
 export { RoomProvider, RoomConsumer, RoomContext };

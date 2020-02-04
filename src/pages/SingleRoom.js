@@ -1,7 +1,6 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext } from 'react'
 import { RoomContext } from '../Context';
 import defaultBcg from "../images/room-10.jpeg";
-import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from "react-router-dom"
 import StyledHero from '../components/StyledHero';
@@ -17,6 +16,7 @@ const SingleRoom = (props) => {
 
 
     let { getRoom } = contextType
+
     let room = getRoom(state.slug)
 
     if (!room) {

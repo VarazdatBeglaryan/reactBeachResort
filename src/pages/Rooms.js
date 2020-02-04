@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 import { Link } from "react-router-dom"
 import RoomContainer from '../components/RoomContainer'
 
-const Rooms = (props) => {
+const Rooms = () => {    
     return (
         <>
             <Hero hero="roomsHero">
@@ -14,9 +14,7 @@ const Rooms = (props) => {
                     </Link>
                 </Banner>
             </Hero>
-            <RoomContainer>
-
-            </RoomContainer>
+            <RoomContainer />
         </>
     )
 }
